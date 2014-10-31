@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-		<title>V5cms - 后台管理中心</title>
+		<title>HDCMS - 后台管理中心</title>
 		<script type='text/javascript' src='http://localhost/v5cms/hdphp/Extend/Org/Jquery/jquery-1.8.2.min.js'></script>
 <link href='http://localhost/v5cms/hdphp/Extend/Org/hdjs/hdui/css/hdui.css' rel='stylesheet' media='screen'>
 <script src='http://localhost/v5cms/hdphp/Extend/Org/hdjs/hdui/js/hdui.js'></script>
@@ -14,7 +14,7 @@
 HOST = 'http://localhost';
 ROOT = 'http://localhost/v5cms';
 WEB = 'http://localhost/v5cms/index.php';
-URL = 'http://localhost/v5cms/index.php/V5/index/index';
+URL = 'http://localhost/v5cms/index.php/v5/index/index';
 APP = 'http://localhost/v5cms/Application';
 COMMON = 'http://localhost/v5cms/Application/Common';
 HDPHP = 'http://localhost/v5cms/hdphp';
@@ -33,7 +33,7 @@ CONTROLLERVIEW = 'http://localhost/v5cms/./Application/V5/View/Index';
 		<script type="text/javascript" src="http://localhost/v5cms/./Application/V5/View/Index/js/quick_menu.js"></script>
 		<link type="text/css" rel="stylesheet" href="http://localhost/v5cms/./Application/V5/View/Index/css/css.css"/>
 		<link type="text/css" rel="stylesheet" href="http://localhost/v5cms/./Application/V5/View/Index/css/quick_menu.css"/>
-		<base target="iframe"/>
+
 	</head>
 	<body>
 		<div class="nav">
@@ -64,7 +64,7 @@ endif;?>
 			<!--头部左侧导航-->
 			<!--头部右侧导航-->
 			<div class="r_menu">
-				<?php echo $_SESSION['username'];?> : <?php echo $_SESSION['user']['username'];?>
+				<?php echo $_SESSION['user']['rname'];?> : <?php echo $_SESSION['user']['username'];?>
 				<a href="<?php echo U('Login/out');?>" target="_self">
 					[退出]
 				</a>
@@ -87,12 +87,7 @@ endif;?>
 		<!--左侧导航-->
 		<div class="main">
 			<!--主体左侧导航-->
-			<div class="left_menu">
-            <dl>
-            <dt>常用</dt>
-            	<dd><a href="http://localhost/v5cms/index.php/category/category">栏目管理</a></dd>
-            </dl>
-            </div>
+			<div class="left_menu"></div>
 			<!--主体左侧导航-->
 			<!--内容显示区域-->
 			<div class="menu_nav">
@@ -115,7 +110,7 @@ endif;?>
 				</div>
 			</div>
 			<div class="top_content">
-				<iframe src="<?php echo U('welcome');?>" nid="0" name="iframe" scrolling="auto" frameborder="0"
+				<iframe src="<?php echo U('welcome');?>" nid="0" scrolling="auto" frameborder="0"
 				style="height: 100%;width: 100%;"></iframe>
 			</div>
 			<!--内容显示区域-->

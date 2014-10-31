@@ -28,6 +28,7 @@ HDPHPTPL = 'http://localhost/v5cms/hdphp/Lib/Tpl';
 VIEW = 'http://localhost/v5cms/./Application/V5/View';
 PUBLIC = 'http://localhost/v5cms/./Application/V5/View/Public';
 CONTROLLERVIEW = 'http://localhost/v5cms/./Application/V5/View/Login';
+HISTORY = 'http://localhost/v5cms/index.php/V5/Login/out';
 </script>
 <link href='http://localhost/v5cms/hdphp/Extend/Org/bootstrap/css/bootstrap.min.css' rel='stylesheet' media='screen'>
 <script src='http://localhost/v5cms/hdphp/Extend/Org/bootstrap/js/bootstrap.min.js'></script>
@@ -54,8 +55,8 @@ CONTROLLERVIEW = 'http://localhost/v5cms/./Application/V5/View/Login';
     	<tr>
     	<td>验证码</td>
         <td>
-        	<input type='code' name="code"/>
-            <img src='http://localhost/v5cms/index.php/V5/Login/code'/>
+        	<input type='text' name="code"/>
+            <img src="http://localhost/v5cms/index.php/V5/Login/code"/>
             <span id='hd_code'/>
         </td>
     </tr>

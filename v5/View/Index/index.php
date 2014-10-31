@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-		<title>V5cms - 后台管理中心</title>
+		<title>HDCMS - 后台管理中心</title>
 		<hdjs/>
 		<js file="__CONTROLLER_VIEW__/js/menu.js"/>
 		<js file="__CONTROLLER_VIEW__/js/quick_menu.js"/>
 		<css file="__CONTROLLER_VIEW__/css/css.css"/>
 		<css file="__CONTROLLER_VIEW__/css/quick_menu.css"/>
-		<base target="iframe"/>
+
 	</head>
 	<body>
 		<div class="nav">
@@ -23,7 +23,7 @@
 			<!--头部左侧导航-->
 			<!--头部右侧导航-->
 			<div class="r_menu">
-				{$hd.session.username} : {$hd.session.user.username}
+				{$hd.session.user.rname} : {$hd.session.user.username}
 				<a href="{|U:'Login/out'}" target="_self">
 					[退出]
 				</a>
@@ -46,12 +46,7 @@
 		<!--左侧导航-->
 		<div class="main">
 			<!--主体左侧导航-->
-			<div class="left_menu">
-            <dl>
-            <dt>常用</dt>
-            	<dd><a href="__WEB__/category/category">栏目管理</a></dd>
-            </dl>
-            </div>
+			<div class="left_menu"></div>
 			<!--主体左侧导航-->
 			<!--内容显示区域-->
 			<div class="menu_nav">
@@ -74,7 +69,7 @@
 				</div>
 			</div>
 			<div class="top_content">
-				<iframe src="{|U:'welcome'}" nid="0" name="iframe" scrolling="auto" frameborder="0"
+				<iframe src="{|U:'welcome'}" nid="0" scrolling="auto" frameborder="0"
 				style="height: 100%;width: 100%;"></iframe>
 			</div>
 			<!--内容显示区域-->

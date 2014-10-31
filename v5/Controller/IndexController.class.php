@@ -1,10 +1,13 @@
 <?php
 //测试控制器类
-class IndexController extends Controller{
+class IndexController extends AuthController{
     //动作方法
     public function index(){
         //显示视图
-		echo 'v5';
         $this->display();
     }
+	public function welcome(){
+			echo "欢迎使用V5CMS";
+	}
+
 }

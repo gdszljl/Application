@@ -24,7 +24,7 @@ $(function(){
 				//表示code字段必须添写
 				//通过AJAX异步验证（验证码正确性）
 				required:true,
-				ajax:CONTROLLER+'checkCode'
+				ajax:"checkCode"
 	},
 	error:{
 		required:'验证码不能为空',

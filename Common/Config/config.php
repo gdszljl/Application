@@ -9,8 +9,8 @@ return array(
     'DB_PORT'                       => 3306,        //数据库连接端口
     'DB_USER'                       => 'root',      //数据库用户名
     'DB_PASSWORD'                   => '',          //数据库密码
-    'DB_DATABASE'                   => '',          //数据库名称
-    'DB_PREFIX'                     => '',          //表前缀
+    'DB_DATABASE'                   => 'v5cms',          //数据库名称
+    'DB_PREFIX'                     => 'v5_',          //表前缀
     'DB_BACKUP'                     => 'backup/',   //数据库备份目录
 );
 ?>
